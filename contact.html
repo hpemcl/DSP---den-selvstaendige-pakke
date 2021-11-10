@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Den selvstændige pakke - Kontakt os</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/stylesheets/style.css">
+    <link rel="stylesheet" href="./assets/stylesheets/responsive.css">
+
+    <script src="./assets/javascript/mobile-menu.js"></script>
+  </head>
+  <body>
+
+    <!-- Den øverste menu bar / header => START -->
+    <header class="main-header">
+        <!--
+          Den øverste mat-sorte bar.
+          - Indeholder titel og telefonnummer
+        -->
+        <div class="header-top">
+          <div class="responsive-header-top">
+            <h1>Den selvstændige pakke</h1>
+            <a href="tel:+4521546478">+45 21 54 64 78</a>
+          </div>
+        </div>
+
+        <!--
+          Den nederste sorte bar
+          - Indeholder logo og navigation
+        -->
+
+        <div class="header-bottom">
+          <div class="responsive-header-bottom">
+            <img src="./assets/images/logo.svg" alt="logo">
+            <nav>
+              <button class="btn-menu" onclick="toggle(this)"><i class="fas fa-bars"></i></button>
+              <div class="menu" id="mobile-menu">
+                <div class="mobile-header">
+                  <h4>Menu</h4>
+                  <button class="btn-menu" onclick="toggle(this)"><i class="fas fa-times"></i></button>
+                </div>
+                <div>
+                  <a href="./index.html">Forside</a>
+                  <a href="./blog.html">Blog</a>
+                  <a href="./prices.html">Priser</a>
+                  <a href="./contact.html">Kontakt os</a>
+                  <a href="./about.html">Om os</a>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Den øverste menu bar / header => SLUT -->
+
+    <!-- breadcrumb => START -->
+    <nav class="breadcrumb">
+      <ul>
+        <li><a href="./index.html">Forside</a></li>
+        <li><i class="fas fa-chevron-right"></i></li>
+        <li><b>Kontakt os</b></li>
+      </ul>
+    </nav>
+    <!-- breadcrumb => SLUT -->
+
+    <!-- Kontakt os info => START -->
+    <section class="cto-simple">
+      <header>
+        <h2>Kontakt os</h2>
+      </header>
+      <p>
+        Hvis du ønsker at stille os yderligere
+        spørgsmål, så skal du udfylde feltet længere nede på siden.
+      </p>
+      <p>
+        Vi forsøger at svare tilbage inden for 3-5 hverdage.
+      </p>
+    </section>
+    <!-- Kontakt os info => SLUT -->
+
+    <hr class="divider">
+
+    <!-- kontakt os form => START -->
+    <section class="contact-form">
+      <header>
+        <h2>Send os en mail via formularen herunder</h2>
+      </header>
+      <form>
+
+        <div>
+          <input type="text" placeholder="Indtast navn">
+          <i class="fas fa-user"></i>
+        </div>
+
+        <div>
+          <input type="email" placeholder="Indtast e-mail">
+          <i class="fas fa-envelope-square"></i>
+        </div>
+
+        <div>
+          <input type="tel" placeholder="Indtast telefonnummer">
+          <i class="fas fa-phone"></i>
+        </div>
+
+        <div>
+          <textarea name="name" placeholder="Spørgsmål"></textarea>
+          <i class="far fa-sticky-note"></i>
+        </div>
+
+        <input type="submit" value="Indsend" class="btn btn-light btn-full">
+      </form>
+    </section>
+    <!-- kontakt os form => SLUT -->
+
+    <!-- Den nederste bar / footer => START -->
+    <footer class="main-footer">
+
+      <!--
+        Den øverste grå-sorte bar.
+        - Indeholder informationer om copyright
+      -->
+
+      <div class="footer-top">
+        <p>Copyright © 2021</p>
+      </div>
+
+      <!--
+        Den nederste sorte bar.
+        - Indeholder logo, virksomheds-info, kontakt-info,
+        og social media info
+      -->
+
+      <div class="footer-bottom">
+        <div>
+          <img src="./assets/images/logo.svg" alt="logo">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. <br><br><br>
+            DSP (DEN SELVSTÆNDIGE PAKKE)
+          </p>
+        </div>
+
+        <div>
+          <h4>Kontakt</h4>
+          <address>
+            <ul>
+              <li>
+                <img src="./assets/images/marker.svg" alt="Marker">
+                <span>Lyngvej 21, 4600 Køge</span>
+              </li>
+              <li>
+                <img src="./assets/images/letter.svg" alt="Letter">
+                <a href="mailto:dsp@dsp.dk">dsp@dsp.dk</a>
+              </li>
+              <li>
+                <img src="./assets/images/github.svg" alt="Github">
+                <a href="#">github.com/dsp</a>
+              </li>
+              <li>
+                <img src="./assets/images/phone.svg" alt="Phone">
+                <a href="tel:+4521546478">+45 21 54 64 78</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div>
+          <h4>Følg os</h4>
+          <nav>
+            <a href="#"><img src="./assets/images/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="./assets/images/twitter.svg" alt="Twitter"></a>
+            <a href="#"><img src="./assets/images/google-plus.svg" alt="Google Plus"></a>
+            <a href="#"><img src="./assets/images/instagram.svg" alt="Instagram"></a>
+            <a href="#"><img src="./assets/images/pinterest.svg" alt="Pinterest"></a>
+            <a href="#"><img src="./assets/images/linkedin.svg" alt="LinkedIn"></a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <!-- Den nederste bar / footer => SLUT -->
+
+  </body>
+</html>

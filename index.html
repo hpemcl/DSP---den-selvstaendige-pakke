@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Den selvstændige pakke</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/stylesheets/style.css">
+    <link rel="stylesheet" href="./assets/stylesheets/responsive.css">
+
+    <script src="./assets/javascript/mobile-menu.js"></script>
+  </head>
+  <body>
+
+    <!-- Den øverste menu bar / header => START -->
+    <header class="main-header">
+        <!--
+          Den øverste mat-sorte bar.
+          - Indeholder titel og telefonnummer
+        -->
+        <div class="header-top">
+          <div class="responsive-header-top">
+            <h1>Den selvstændige pakke</h1>
+            <a href="tel:+4521546478">+45 21 54 64 78</a>
+          </div>
+        </div>
+
+        <!--
+          Den nederste sorte bar
+          - Indeholder logo og navigation
+        -->
+
+        <div class="header-bottom">
+          <div class="responsive-header-bottom">
+            <img src="./assets/images/logo.svg" alt="logo">
+            <nav>
+              <button class="btn-menu" onclick="toggle(this)"><i class="fas fa-bars"></i></button>
+              <div class="menu" id="mobile-menu">
+                <div class="mobile-header">
+                  <h4>Menu</h4>
+                  <button class="btn-menu" onclick="toggle(this)"><i class="fas fa-times"></i></button>
+                </div>
+                <div>
+                  <a href="./index.html">Forside</a>
+                  <a href="./blog.html">Blog</a>
+                  <a href="./prices.html">Priser</a>
+                  <a href="./contact.html">Kontakt os</a>
+                  <a href="./about.html">Om os</a>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Den øverste menu bar / header => SLUT -->
+
+    <!-- Hero => START -->
+    <section class="hero">
+      <div class="responsive-wrapper">
+        <header>
+          <h4>De 5 vigtigste</h4>
+          <h2>Råd for nyopstartede firmaer</h2>
+        </header>
+        <p>
+          Vi giver 5 gratis råd, om hvordan i skal starte jeres virksomhed.
+          Vi hjælper blot jer med at komme i gang uden at blive stresset.
+          Tryk på “læs mere” for at få mere information.
+        </p>
+        <a href="./blog.html" class="btn btn-light">Læs mere</a>
+      </div>
+    </section>
+    <!-- Hero => SLUT -->
+
+    <!-- Tidslinje => START -->
+    <section class="timeline">
+      <header>
+        <h2>Fra bestilling til produkt</h2>
+      </header>
+      <ul>
+        <li>
+          <span class="dot"></span>
+          <span class="line"></span>
+          <span class="icon">
+            <span class="icon-badge">
+              <i class="far fa-handshake"></i>
+            </span>
+          </span>
+          <div>
+            <h3>1. Meet & Greet</h3>
+            <p>
+              Vi møder jer og i møder os. Vi snakker om
+              jeres fremtidige foretning, vores egne plan, pris etc.
+            </p>
+          </div>
+        </li>
+        <li>
+          <span class="icon">
+            <span class="icon-badge">
+              <i class="fas fa-drafting-compass"></i>
+            </span>
+          </span>
+          <div>
+            <h3>2. Koncept</h3>
+            <p>
+              Vi designer og I godkender.
+              Vi laver en masse tegninger af både logo,
+              hjemmeside og meget mere for at opfylde jeres behov og ønsker.
+            </p>
+          </div>
+        </li>
+        <li>
+          <span class="icon">
+            <span class="icon-badge">
+              <i class="fas fa-truck"></i>
+            </span>
+          </span>
+          <div>
+            <h3>3. Vi leverer</h3>
+            <p>
+              Glade kunder er vi glade for.
+              Vi sender jeres produkter til jer og
+              I ender med et smil på læberne.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- Tidslinje => SLUT -->
+
+    <hr class="divider">
+
+    <!-- Call-to-action UDEN billede baggrund => START -->
+    <section class="cto-simple">
+      <header>
+        <h2>Skriv til os</h2>
+      </header>
+      <p>
+        Tryk på knappen nedenunder, og vi svarer på alle dine spørgsmål.
+        Vi svarer så hurtig som muligt. Så send os en mail eller ring til
+        os og vi hjælper gerne med ubesvarende spørgsmål og uløste problemer.
+      </p>
+      <a href="./contact.html" class="btn btn-light">Start nu</a>
+    </section>
+    <!-- Call-to-action UDEN billede baggrund => SLUT -->
+
+    <!-- Call-to-action med billede baggrund => START -->
+    <section class="cto-image">
+      <div class="responsive-wrapper">
+        <header>
+          <h4>Kontakt os nu</h4>
+          <h2>Og få et godt tilbud!</h2>
+        </header>
+        <a href="./contact.html" class="btn btn-dark">Kontakt os nu!</a>
+      </div>
+    </section>
+    <!-- Call-to-action med billede baggrund => SLUT -->
+
+    <!-- Bruger feedback => START -->
+    <section class="reviews">
+      <header>
+        <h2>"Jeg er taknemmelig"</h2>
+      </header>
+      <div class="flex">
+        <b>Kat Jensen , To-go-too-good</b>
+        <span class="icon">
+          <i class="fas fa-user"></i>
+        </span>
+      </div>
+      <cite>
+        "Jeg var sku lidt på bar bund, hvis jeg ikke fandt dette firma…
+        Jeg var i stå med hvordan jeg skulle lave både logo og alt muligt andet.
+        Det satte mine planer i gang, da jeg fik mit logo, min egen hjemmeside og
+        tøj til mit firma. Jeg er virkelig taknemmelig."
+      </cite>
+    </section>
+    <!-- Bruger feedback => SLUT -->
+
+    <hr class="divider">
+
+    <!-- Nyhedsbrev => START -->
+    <section class="newsletter">
+      <header>
+        <h2>Nyhedsbrev</h2>
+      </header>
+      <p>
+        Tilmeld til vores newsletter for at få at vide på forhånd vores
+        specielle tilbud, vi kommer med. Kom et skridt foran de andre,
+        for at åbne flere muligheder.
+      </p>
+      <form>
+
+        <div>
+          <input type="text" placeholder="Indtast navn">
+          <i class="fas fa-user"></i>
+        </div>
+
+        <div>
+          <input type="email" placeholder="Indtast e-mail">
+          <i class="fas fa-envelope-square"></i>
+        </div>
+
+        <input type="submit" value="Opret mig" class="btn btn-light btn-full">
+      </form>
+    </section>
+    <!-- Nyhedsbrev => SLUT -->
+
+    <!-- Den nederste bar / footer => START -->
+    <footer class="main-footer">
+
+      <!--
+        Den øverste grå-sorte bar.
+        - Indeholder informationer om copyright
+      -->
+
+      <div class="footer-top">
+        <p>Copyright © 2021</p>
+      </div>
+
+      <!--
+        Den nederste sorte bar.
+        - Indeholder logo, virksomheds-info, kontakt-info,
+        og social media info
+      -->
+
+      <div class="footer-bottom">
+        <div>
+          <img src="./assets/images/logo.svg" alt="logo">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. <br><br><br>
+            DSP (DEN SELVSTÆNDIGE PAKKE)
+          </p>
+        </div>
+
+        <div>
+          <h4>Kontakt</h4>
+          <address>
+            <ul>
+              <li>
+                <img src="./assets/images/marker.svg" alt="Marker">
+                <span>Lyngvej 21, 4600 Køge</span>
+              </li>
+              <li>
+                <img src="./assets/images/letter.svg" alt="Letter">
+                <a href="mailto:dsp@dsp.dk">dsp@dsp.dk</a>
+              </li>
+              <li>
+                <img src="./assets/images/github.svg" alt="Github">
+                <a href="#">github.com/dsp</a>
+              </li>
+              <li>
+                <img src="./assets/images/phone.svg" alt="Phone">
+                <a href="tel:+4521546478">+45 21 54 64 78</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div>
+          <h4>Følg os</h4>
+          <nav>
+            <a href="#"><img src="./assets/images/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="./assets/images/twitter.svg" alt="Twitter"></a>
+            <a href="#"><img src="./assets/images/google-plus.svg" alt="Google Plus"></a>
+            <a href="#"><img src="./assets/images/instagram.svg" alt="Instagram"></a>
+            <a href="#"><img src="./assets/images/pinterest.svg" alt="Pinterest"></a>
+            <a href="#"><img src="./assets/images/linkedin.svg" alt="LinkedIn"></a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <!-- Den nederste bar / footer => SLUT -->
+
+  </body>
+</html>
