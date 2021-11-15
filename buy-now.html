@@ -77,66 +77,80 @@
     </nav>
     <!-- breadcrumb => SLUT -->
 
- <!-- vælg selv pakken intro => START -->
- <section class="cto-simple">
-    <header>
-      <h2>Vælg selv pakken</h2>
-    </header>
-    <p>
-      Vælg-selv pakken er en pakke hvor der er frit valg på alle hylder.
-      Pakken er til dig som har måske allerede et logo, men du mangler et
-      par ekstra ting til at hjælpe dig i gang med dit selvstændig firma.
-    </p>
-    <p>
-      Denne pakke er blevet til en standard pakke, da mange nyopstartede
-      firmaer har benyttet af denne pakke.
-    </p>
-    <p>
-      Vi tilbyder stadig alle 4 typer af basis-pakken,
-      men du får selv lov til at bestemme.
-    </p>
-</section>  
+    <section class="checkout-form">
+        <header class="h2-tekst">
+            <h2>Den selvstændig pakke (DSP)</h2>
+            <p>Husk at tjekke om dine oplysninger er stadig rigtigt og udfyldt.</p>
+        </header>
+        <section class="checkout-form">
+            <section class="col-75">
+                <section class="container-checkout">
+                    <form action="/action_page.php">
+                        <section class="row-checkout">
+                            <section class="col-50">
+                                <h3>BETALINGSADRESSE</h3>
+                                    <label for="fname"><i class="fa fa-user"></i> Fulde Navn</label>
+                                    <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
 
-<!--vælg selv => start -->
+                                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                                    <input type="text" id="email" name="email" placeholder="john@example.com">
 
-<section class="choose">
-    <section class ="h2-tekst">
-        <header>
-        <h2>Tryk på feltet for at vælge et eller flere produkter</h2>
-        <p>Kan max vælge 4 produkter</p>
-    </header>
+                                    <label for="adr"><i class="fa fa-address-card-o"></i> Adresse</label>
+                                    <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+
+                                    <label for="city"><i class="fa fa-institution"></i> By</label>
+                                    <input type="text" id="city" name="city" placeholder="København N">
+
+                                    <label for="zip">Zip</label>
+                                    <input type="text" id="zip" name="zip" placeholder="5400">
+
+                                <h3>BETALING</h3>
+                                    <label for="fname">Accepted Cards</label>
+                                        <section class="icon-container">
+                                            <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                            <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                            <i class="fa fa-cc-discover" style="color:orange;"></i>
+                                        </section>
+                                    <label for="cname">Navnet på kortet</label>
+                                    <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+
+                                    <label for="ccnum">Kredit kort nummer</label>
+                                    <input type="text" id="ccnum" name="cardnumber" placeholder="+45 11-22-33-44">
+
+                                    <label for="expmonth">Exp måned</label>
+                                    <input type="text" id="expmonth" name="expmonth" placeholder="10">
+
+                                    <label for="expyear">Exp år</label>
+                                    <input type="text" id="expyear" name="expyear" placeholder="23">
+
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="352">
+
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                                    </label>
+                                        <input type="submit" value="Fortsæt til kassen" class="btn-checkout">
+                                    </form>
+
+                                <section class="col-25">
+                                  <section class="container-cart">
+                                    <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>2</b></span></h4>
+                                    <p><a href="#">Logo</a> <span class="price">0 Kr.</span></p>
+                                    <p><a href="#">Hjemmeside</a> <span class="price">6.000 Kr.</span></p>
+                                    <p><a href="#">Tøj</a> <span class="price">6.000 Kr.</span></p>
+                                    <p><a href="#">Teaser</a> <span class="price">0 Kr.</span></p>
+                                    <hr>
+                                    <p>Total <span class="price" style="color:black"><b>12.000 Kr</b></span></p>
+                                  </section>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
     </section>
-
-    <label class ="container"> Jeg vælger Logo
-        <input type="checkbox">
-        <span class="checkmark"></span>
-    </label>
-
-    <label class ="container"> Jeg vælger Hjemmeside
-        <input type="checkbox">
-        <span class="checkmark"></span>
-    </label>
-
-    <label class ="container"> Jeg vælger Logo
-        <input type="checkbox">
-        <span class="checkmark"></span>
-    </label>
-
-    <label class ="container"> Jeg vælger Teaser
-        <input type="checkbox">
-        <span class="checkmark"></span>
-    </label>
-
-    <section class ="custom-btn">
-        <a href="./buy-now.html"><b>Til kassen</b></a>
-    </section>
-
-
-</section>
- <!--vælg selv => slut -->
-
-
-
 
 
     <!-- Den nederste bar / footer => START -->

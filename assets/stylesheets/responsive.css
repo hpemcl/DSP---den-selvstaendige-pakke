@@ -55,6 +55,7 @@
   .hero,
   .cto-image {
     width: 100%;
+    padding: 10px;
   }
 
   .timeline,
@@ -80,6 +81,24 @@
   ** SECTIONS SLUT
   ** <=
   */
+
+/*
+** RESPONSIVE CHECKOUT FORM
+** <=
+*/
+
+  .checkout-form {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
 
   /*
   ** ANDET START
