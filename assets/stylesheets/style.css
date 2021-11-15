@@ -522,7 +522,6 @@ input {
 ** =>
 */
 
-
 * {
   box-sizing: border-box;
 }
@@ -557,18 +556,19 @@ input {
 }
 
 .container-checkout, .container-cart {
-  background-color: #f2f2f2;
-  padding: 5px 20px 15px 20px;
-  border: 1px solid lightgrey;
+  background-color: var(--blue);
+  padding: 5px 10px 15px 20px;
   border-radius: 3px;
+
+
 }
 
 input[type=text] {
   width: 100%;
   margin-bottom: 20px;
   padding: 12px;
-  border: 1px solid #ccc;
   border-radius: 3px;
+ 
 }
 
 label {
@@ -583,32 +583,36 @@ label {
 }
 
 .btn-checkout {
-  background-color: #04AA6D;
+  background-color: var(--black);
   color: white;
   padding: 12px;
-  margin: 10px 0;
+  margin: 20px 0;
   border: none;
   width: 100%;
   border-radius: 3px;
   cursor: pointer;
   font-size: 17px;
+  text-align: center;
 }
 
 .btn-checkout:hover {
-  background-color: #45a049;
+  background-color: var(--grey);
 }
 
-a {
-  color: #2196F3;
+p, h2 {
+  color: var(--black);
 }
 
+h4, .checkout-color {
+  color: var(--white);
+}
 hr {
-  border: 1px solid lightgrey;
+  border: 1px solid var(--white);
 }
 
 span.price {
   float: right;
-  color: grey;
+  color: var(--white);
 }
 
 

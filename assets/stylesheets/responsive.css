@@ -87,14 +87,20 @@
 ** <=
 */
 
-  .checkout-form {
-    flex-direction: column-reverse;
-  }
-  .col-25 {
-    margin-bottom: 20px;
-  }
+.checkout-form, .container-cart {
+  flex-direction: column-reverse;
+  
+}
+.col-25 {
+  margin-bottom: 20px;
 }
 
+
+
+.container-checkout {
+  width: 50%;
+  float: center;
+}
 
 
 
