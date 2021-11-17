@@ -77,97 +77,100 @@
     </nav>
     <!-- breadcrumb => SLUT -->
 
-    <section class="checkout-form">
+    
         <header class="h2-tekst">
             <h2>Den selvstændig pakke (DSP)</h2>
             <p>Husk at tjekke om dine oplysninger er stadig rigtigt og udfyldt.</p>
         </header>
-        <section class="checkout-form">
-            <section class="col-75">
-                <section class="container-checkout">
-                    <form action="/action_page.php">
-                        <section class="row-checkout">
-                            <section class="col-50">
-                                <h3>BETALINGSADRESSE</h3>
-                                    <label for="fname"><i class="fa fa-user"></i> Fulde Navn</label>
-                                    <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
 
-                                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                                    <input type="text" id="email" name="email" placeholder="john@example.com">
-
-                                    <label for="adr"><i class="fa fa-address-card-o"></i> Adresse</label>
-                                    <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-
-                                    <label for="city"><i class="fa fa-institution"></i> By</label>
-                                    <input type="text" id="city" name="city" placeholder="København N">
-
-                                    <label for="zip">Zip</label>
-                                    <input type="text" id="zip" name="zip" placeholder="5400">
-                           </section> 
-                        </section> 
+        <div class="row">
+            <div class="col-75">
+              <div class="container-checkout">
+                <form action="/action_page.php">
                 
-    
-
-                        <section class="checkout-form">
-                            <section class="col-75">    
-                                <h3>BETALING</h3>
-                                    <label for="fname">Accepted Cards</label>
-                                        <section class="icon-container">
-                                            <i class="fa fa-cc-visa" style="color:navy;"></i>
-                                            <i class="fa fa-cc-amex" style="color:blue;"></i>
-                                            <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                                            <i class="fa fa-cc-discover" style="color:orange;"></i>
-                                        </section>
-                                    </section> 
-                                </section> 
-
-                                    
-                        <section class="checkout-form">
-                            <section class="col-75"> 
-                                    <label for="cname">Navnet på kortet</label>
-                                    <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-
-                                    <label for="ccnum">Kredit kort nummer</label>
-                                    <input type="text" id="ccnum" name="cardnumber" placeholder="+45 11-22-33-44">
-
-                                    <label for="expmonth">Exp måned</label>
-                                    <input type="text" id="expmonth" name="expmonth" placeholder="10">
-
-                                    <label for="expyear">Exp år</label>
-                                    <input type="text" id="expyear" name="expyear" placeholder="23">
-
-                                    <label for="cvv">CVV</label>
-                                    <input type="text" id="cvv" name="cvv" placeholder="352">
-
-                                    <label>
-                                        <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-                                    
-                            </section> 
-                        </section> 
-                                       
-                                <section class="col-25">
-                                    <section class="container-cart">
-                                        <h4>Cart <span class="price" style="color:white;"><i class="fa fa-shopping-cart"></i> <b>2</b></span></h4>
-                                        <p class ="checkout-color">Logo</a> <span class="price">0 Kr.</span></p>
-                                        <p class ="checkout-color">Hjemmeside</a> <span class="price">6.000 Kr.</span></p>
-                                        <p class ="checkout-color">Tøj</a> <span class="price">6.000 Kr.</span></p>
-                                        <p class ="checkout-color">Teaser</a> <span class="price">0 Kr.</span></p>
-                                        <hr>
-                                        <p class ="checkout-color">Total <span class="price" style="color:white;"><b>12.000 Kr</b></span></p>
-
-                                        </label>
-                                        <input type="submit" value="Fortsæt til kassen" class="btn-checkout">
-                                    </form>
-                                  </section>
-                                </section>
-                            </section>
-                        </section>
-                    </section>
-                </section>
-            </section>
-        </section>
-    </section>
-
+                  <div class="row">
+                    <div class="col-50">
+                      <h3>Betalingsadresse</h3>
+                      <label for="fname"><i class="fa fa-user"></i> Fulde Navn</label>
+                      <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                      <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                      <input type="text" id="email" name="email" placeholder="john@example.com">
+                      <label for="adr"><i class="fa fa-address-card-o"></i> Adresse</label>
+                      <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                      <label for="city"><i class="fa fa-institution"></i> By</label>
+                      <input type="text" id="city" name="city" placeholder="New York">
+          
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="zip">Postnummer</label>
+                          <input type="text" id="zip" name="zip" placeholder="1001">
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="col-50">
+                      <h3>Betaling</h3>
+                      <label for="fname">Vi accepterer KUN disse kort</label>
+                      <div class="icon-container">
+                        <i class="fa fa-cc-visa" style="color:navy;"></i>
+                        <i class="fa fa-cc-amex" style="color:blue;"></i>
+                        <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                        <i class="fa fa-cc-discover" style="color:orange;"></i>
+                      </div>
+                      <label for="cname">Kortet navneholder</label>
+                      <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                      <label for="ccnum">Kreditkortet nummer</label>
+                      <input type="text" id="ccnum" name="cardnumber" placeholder="11-22-33-44">
+                      <label for="expmonth">Exp Måned</label>
+                      <input type="text" id="expmonth" name="expmonth" placeholder="12">
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="expyear">Exp År</label>
+                          <input type="text" id="expyear" name="expyear" placeholder="18">
+                        </div>
+                        <div class="col-50">
+                          <label for="cvv">CVV</label>
+                          <input type="text" id="cvv" name="cvv" placeholder="352">
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <label>
+                    <input type="checkbox" checked="checked" name="sameadr"> Send leveringsadresse samme som fakturering
+                  </label>
+                  <input type="submit" value="Continue to checkout" class="btn-form ">
+                </form>
+              </div>
+            </div>
+            <div class="col-25">
+              <div class="container-checkout">
+                <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b></b></span></h4>
+                    <label class ="container"> Jeg vælger Logo
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class ="container"> Jeg vælger Hjemmeside
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class ="container"> Jeg vælger Logo
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class ="container"> Jeg vælger Teaser
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                
+                    <hr>
+                    <p>Total <span class="price" style="color:white"><b>12.000 kr.</b>2</span></p>
+                </div>
+                </div>
+            </div>
 
     <!-- Den nederste bar / footer => START -->
     <footer class="main-footer">
@@ -190,10 +193,9 @@
         <div class="footer-bottom">
           <div>
             <img src="./assets/images/logo.svg" alt="logo">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt
-              ut labore et dolore magna aliqua. <br><br><br>
+            <p class ="footer">
+                Virksomheden blev oprettet i 2021 af 6 individer der
+                bemærkede stigningen af selvstændige virksomheder. <br><br><br>
               DSP (DEN SELVSTÆNDIGE PAKKE)
             </p>
           </div>
@@ -212,7 +214,7 @@
                 </li>
                 <li>
                   <img src="./assets/images/github.svg" alt="Github">
-                  <a href="#">github.com/dsp</a>
+                  <a href="https://github.com/hpemcl/DSP---den-selvstaendige-pakke">DSP - Den Selvstaendige Pakke</a>
                 </li>
                 <li>
                   <img src="./assets/images/phone.svg" alt="Phone">
@@ -225,11 +227,10 @@
           <div>
             <h4>Følg os</h4>
             <nav>
-              <a href="#"><img src="./assets/images/facebook.svg" alt="Facebook"></a>
-              <a href="#"><img src="./assets/images/twitter.svg" alt="Twitter"></a>
-              <a href="#"><img src="./assets/images/google-plus.svg" alt="Google Plus"></a>
+              <a href="https://www.facebook.com/Den-Selvst%C3%A6ndige-Pakke-103041695541239/?ref=pages_you_manage"><img src="./assets/images/facebook.svg" alt="Facebook"></a>
+              <a href="#"><img src="./assets/images/youtube.svg" alt="YouTube"></a>
+              <a href="https://www.tiktok.com/@den_selvstaendige_pakke?_d=secCgwIARCbDRjEFSACKAESPgo8KJixsMrFrNvCRc3UN3enurDCoh9HYNgXuc33HVy7vqyEw3QcE3bbVMtZVLU2NjLQMj%2F4voAMsXWP08pUGgA%3D&checksum=4940d1525add24042f7d6f75149bf63208fac05b54bb1366e2aa5f88d9960848&language=en&sec_uid=MS4wLjABAAAAe6idYOMrmSzMoCDx5DtTrlGHHIecU_8_xXWlNt-ackp0wMFbVm6pfCtyKYRVMtJ0&sec_user_id=MS4wLjABAAAAe6idYOMrmSzMoCDx5DtTrlGHHIecU_8_xXWlNt-ackp0wMFbVm6pfCtyKYRVMtJ0&share_app_id=1233&share_author_id=7023515646794138630&share_link_id=F3D5725E-8FD7-48DF-94A3-97DEB1B3D342&tt_from=copy&u_code=dlb8d14ekh01d2&user_id=7023515646794138630&utm_campaign=client_share&utm_medium=ios&utm_source=copy&source=h5_m&_r=1"><img src="./assets/images/Tiktok.svg" alt="Tiktok"></a>
               <a href="#"><img src="./assets/images/instagram.svg" alt="Instagram"></a>
-              <a href="#"><img src="./assets/images/pinterest.svg" alt="Pinterest"></a>
               <a href="#"><img src="./assets/images/linkedin.svg" alt="LinkedIn"></a>
             </nav>
           </div>

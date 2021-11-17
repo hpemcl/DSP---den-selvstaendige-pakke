@@ -526,7 +526,7 @@ input {
   box-sizing: border-box;
 }
 
-.row-checkout {
+.row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
@@ -552,12 +552,13 @@ input {
 .col-25,
 .col-50,
 .col-75 {
-  padding: 0 16px;
+  padding: 10px 16px;
 }
 
-.container-checkout, .container-cart {
+.container-checkout {
   background-color: var(--blue);
-  padding: 5px 10px 15px 20px;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid var(--white);
   border-radius: 3px;
 
 
@@ -568,7 +569,7 @@ input[type=text] {
   margin-bottom: 20px;
   padding: 12px;
   border-radius: 3px;
- 
+
 }
 
 label {
@@ -582,11 +583,11 @@ label {
   font-size: 24px;
 }
 
-.btn-checkout {
+.btn-form {
   background-color: var(--black);
   color: white;
   padding: 12px;
-  margin: 20px 0;
+  margin: 10px 0;
   border: none;
   width: 100%;
   border-radius: 3px;
@@ -595,15 +596,14 @@ label {
   text-align: center;
 }
 
-.btn-checkout:hover {
+.btn-form:hover {
   background-color: var(--grey);
 }
 
-p, h2 {
+p, h2{
   color: var(--black);
 }
-
-h4, .checkout-color {
+h3, .checkout-color, .hvidfarve {
   color: var(--white);
 }
 hr {
@@ -635,6 +635,9 @@ span.price {
 ** MAIN FOOTER START
 ** =>
 */
+.footer {
+  color: var(--white);
+}
 
 .main-footer .footer-top {
   background: var(--grey);
