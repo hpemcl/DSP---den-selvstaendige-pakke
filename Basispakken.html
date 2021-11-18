@@ -88,8 +88,8 @@
       </section>
 
       <div class="row">
-        <div class="col-50">
-          <div class="container-checkout">
+        <div class="container-checkout">
+          <div class="col-50">
             <form action="/action_page.php">
                 <header class="h2-tekst">
                   <h2>Indkøbskurv</h2>
@@ -101,8 +101,7 @@
                   <li>Tøj</li>
                   <li>Teaser</li>
                 </ul>
-              </header> 
-                
+              
                 <section class="deopdown.number">
                     <label id="antal">Antal:</label>
                     <select name="Antal" id="Antal">
@@ -117,40 +116,26 @@
                       <option value="9">9</option>
                       <option value="10">10</option>
                     </select>
-                </section>
+                </form>
               </section>
-                   
+            </div>
+          </div>
 
-       <div class="col-50">
-        <h3>Betaling</h3>
-        <p>Vi accepterer KUN disse kort</p>
-        <div class="icon-container">
-          <img class="visa" src="./assets/images/Icon payment-visa.svg" alt="Visa">
-          <img class="Visaelektron" src="./assets/images/Icon payment-visa-electron.svg" alt="Visa elektron">
-          <img class="Mastercard" src="./assets/images/Icon metro-mastercard.svg" alt="Mastercard">
-          <img class="Maestro" src="./assets/images/Icon payment-maestro.svg" alt="Maestro">
-          <img class="JCB" src="./assets/images/Icon payment-jcb.svg" alt="JCB">
+          <div class="col-25">
+            <div class="container-checkout">
+              <h4>Kurv <span class="price"><i class="fa fa-shopping-cart"></i> <b>1</b></span></h4>
+              <p> Basis-pakken <span class="price">15.000 kr.</span></p>
+              <p> Moms <span class="price">5.000 kr.</span></p>
+              <hr>
+              <p>Pris i alt (inkl. moms) <span class="price"><b>20.000 kr. </b></span></p>
+              <nav class="pay">
+                <a href="./kassen.html" class="btn btn-form">Til kassen</a>
+              </nav>
+            </div>
+          </div>      
         </div>
-      
-
-       <div class="col-25">
-         <div class="container-checkout">
-             <h4>Kurv <span class="price"><i class="fa fa-shopping-cart"></i> <b>1</b></span></h4>
-             <p> Basis-pakken <span class="price">15.000 kr.</span></p>
-             <p> Moms <span class="price">5.000 kr.</span></p>
-             <hr>
-             <p>Pris i alt (inkl. moms) <span class="price"><b>20.000 kr. </b></span></p>
-         </div>
-       </div>
-     </div>
-       <nav class="pay">
-         <a href="./kassen.html" class="btn btn-form">Til kassen</a>
-       </nav>
-            </form>
       </div>
-        </div>
-        </div>
-
+    </header>
 
    
  <!-- Den nederste bar / footer => START -->
@@ -218,7 +203,5 @@
   </div>
 </footer>
 <!-- Den nederste bar / footer => SLUT -->
-
-
   </body>
 </html>

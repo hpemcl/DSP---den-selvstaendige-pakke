@@ -721,3 +721,201 @@ span.price {
 ** MAIN FOOTER SLUT
 ** <=
 */
+
+/*FAQ SIDEN*/
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #ed8a4c;
+  color:var(--black);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ed8a4c;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+/*SoMe blog*/
+
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  float: right;
+  width: 33.33%;
+  padding: 5px;
+  margin: 30px;
+}
+
+/* Shoppingcard*/
+.shoppingcart{
+  background-color: var(--blue);
+  padding: 18px;
+  margin: 10px; 
+margin: 10px; 
+  margin: 10px; 
+  color: white;
+}
+
+
+.cardpayment{
+  background-color: var(--blue);
+  padding: 18px;
+margin: 10px; 
+color: white;
+}
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.visa, .Visaelektron, .Mastercard, .Maestro, .JCB{
+  width: 5px;
+  height: 5px;
+  
+}
+
+.pay{
+  box-shadow: 0 3px 6px var(--black-alpha),
+              inset 0 3px 6px var(--black-alpha);
+  border-color: var(--white);
+  background: var(--black);
+  margin:20px;
+  padding: 5px;
+ align-items: flex-start;
+ border-image-repeat: stretch;
+ text-align: center;
+ 
+}
+
+.payhere{
+  text-decoration: none;
+  color: var(--white);
+}
+
+.checkout{
+padding: 18px;
+margin: 10px; 
+box-sizing: border-box;
+display: block;
+}
+
+.price, .Subtotalum, .Momsia{
+  text-align: right;
+  line-height: 24px;
+ }
+
+ .price{
+  font-weight: bold;
+ }
+
+ .aknap{
+ background-color: var(--blue);
+ color: white;
+ padding: 12px;
+ margin: 10px 0;
+ border: none;
+ width: 100%;
+ border-radius: 3px;
+ cursor: pointer;
+ font-size: 17px;
+ text-align: center;
+ text-decoration: none;
+ width: 100%;
+ text-align: left;
+ border: none;
+}
+
+.sameadr{
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  padding: 0 16px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  background-color: var(--blue);
+  padding: 5px 20px 15px 20px;
+  border: 1px solid var(--blue);
+  border-radius: 3px;
+}
+
+span.price {
+  float: right;
+  color: black;
+}
+
+.thanks{
+  text-align: center;
+  margin-bottom: 350px;
+}
+
+.forside{
+  color: grey;
+  text-align: center;
+  border-bottom: 100px;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accepter{
+  background-color: var(--black);
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ED8A4C;
+}
+
+
+
+.handelsbetingelser{
+  text-align: left;
+  color: black;
+}
+
+.betaling{
+  margin: 20px;
+}
