@@ -511,6 +511,7 @@ input {
   font-weight: 400;
 }
 
+<<<<<<< HEAD
 /*
 ** MAIN FOOTER SLUT
 ** <=
@@ -643,19 +644,25 @@ span.price {
   border: none;
   width: 100%;
   border-radius: 3px;
+=======
+.accordion {
+  background-color: #ED8A4C;
+  color: black;
+>>>>>>> main
   cursor: pointer;
-  font-size: 17px;
-  text-align: center;
-  text-decoration: none;
-  margin-bottom: 30px;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
 }
 
-.betaling{
-  color: #fff;
-  background-color: var(--blue);
-  padding: 10px;
+.active, .accordion:hover {
+  background-color: #ED8A4C;
 }
 
+<<<<<<< HEAD
 
 
 .handelsbetingelser{
@@ -692,3 +699,16 @@ span.price {
   background-color: white;
   overflow: hidden;
 }
+=======
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+/*
+** MAIN FOOTER SLUT
+** <=
+*/
+>>>>>>> main
