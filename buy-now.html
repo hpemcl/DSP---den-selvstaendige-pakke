@@ -54,6 +54,7 @@
                   <a href="./prices.html">Priser</a>
                   <a href="./contact.html">Kontakt os</a>
                   <a href="./about.html">Om os</a>
+                  <a href= "./faq.html">FAQ</a>
                 </div>
               </div>
             </nav>
@@ -70,9 +71,11 @@
         <li><i class="fas fa-chevron-right"></i></li>
         <li><a href="./prices.html">Priser</a></li>
         <li><i class="fas fa-chevron-right"></i></li>
-        <li><a href="./customize-product.html">Vælg-selv-pakken</a></li>
+        <li><a href="./basic-product.html">Basis pakken</a></li>
         <li><i class="fas fa-chevron-right"></i></li>
-        <li><b>Bestil nu</b></li>
+        <li><a href="./Basispakken.html">Bestil nu</a></li>
+        <li><i class="fas fa-chevron-right"></i></li>
+        <li><b>Betaling</b></li>
       </ul>
     </nav>
     <!-- breadcrumb => SLUT -->
@@ -112,10 +115,11 @@
                       <h3>Betaling</h3>
                       <label for="fname">Vi accepterer KUN disse kort</label>
                       <div class="icon-container">
-                        <i class="fa fa-cc-visa" style="color:navy;"></i>
-                        <i class="fa fa-cc-amex" style="color:blue;"></i>
-                        <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                        <i class="fa fa-cc-discover" style="color:orange;"></i>
+                        <img class="visa" src="./assets/images/Icon payment-visa.svg" alt="Visa">
+                        <img class="Visaelektron" src="./assets/images/Icon payment-visa-electron.svg" alt="Visa elektron">
+                        <img class="Mastercard" src="./assets/images/Icon metro-mastercard.svg" alt="Mastercard">
+                        <img class="Maestro" src="./assets/images/Icon payment-maestro.svg" alt="Maestro">
+                        <img class="JCB" src="./assets/images/Icon payment-jcb.svg" alt="JCB">
                       </div>
                       <label for="cname">Kortet navneholder</label>
                       <input type="text" id="cname" name="cardname" placeholder="John More Doe">
@@ -136,28 +140,36 @@
                     </div>
                     
                   </div>
-                  <label>
-                    <input type="checkbox" checked="checked" name="sameadr"> Send leveringsadresse samme som fakturering
-                  </label>
-                  <input type="submit" value="Continue to checkout" class="btn-form ">
+
+                  <label class ="container"> Send leveringsadresse samme som fakturering
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class ="container"> Jeg accepterer handelsbetingelserne*
+                  <input type="checkbox" checked="checked">
+                  <span class="checkmark"></span>
+              </label>
+
+                  <a href="./thanks.html" class="btn btn-form">Bestil nu</a>
                 </form>
               </div>
             </div>
             <div class="col-25">
               <div class="container-checkout">
-                <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b></b></span></h4>
+                <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>2</b></span></h4>
                     <label class ="container"> Jeg vælger Logo
                         <input type="checkbox">
                         <span class="checkmark"></span>
                     </label>
                     
                     <label class ="container"> Jeg vælger Hjemmeside
-                        <input type="checkbox">
+                        <input type="checkbox" checked="checked">
                         <span class="checkmark"></span>
                     </label>
                     
-                    <label class ="container"> Jeg vælger Logo
-                        <input type="checkbox">
+                    <label class ="container"> Jeg vælger Tøj
+                        <input type="checkbox" checked="checked">
                         <span class="checkmark"></span>
                     </label>
                     
@@ -165,9 +177,12 @@
                         <input type="checkbox">
                         <span class="checkmark"></span>
                     </label>
+
+                    <p> Moms <span class="price">2.000 kr.</span></p>
+
                 
                     <hr>
-                    <p>Total <span class="price" style="color:white"><b>12.000 kr.</b>2</span></p>
+                    <p>Total <span class="price" style="color:white"><b>14.000 kr.</b></span></p>
                 </div>
                 </div>
             </div>

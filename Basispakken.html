@@ -54,6 +54,7 @@
                   <a href="./prices.html">Priser</a>
                   <a href="./contact.html">Kontakt os</a>
                   <a href="./about.html">Om os</a>
+
                 </div>
               </div>
             </nav>
@@ -76,147 +77,147 @@
       <!-- breadcrumb => SLUT -->
 
       <section class="cto-simple">
-        <header>
+        <header class="h2-tekst">
           <h2>Basis pakken</h2>
         </header>
         <p> Basis-pakken er en pakke til dig som er ny til at designe og få 
           ens ide/firma ud til virkelighed. Vi anbefaler denne pakke til jer 
-          som har brug for hjælp med at komme i gang, men ved desværre ikke hvordan.  </p>
+          som har brug for hjælp med at komme i gang, men ved desværre ikke hvordan.
+          Husk at tjekke om dine oplysninger er stadig rigtigt og udfyldt.  
+        </p>
       </section>
 
+      <div class="row">
+        <div class="col-50">
+          <div class="container-checkout">
+            <form action="/action_page.php">
+                <header class="h2-tekst">
+                  <h2>Indkøbskurv</h2>
+                  <h3>Basis-pakken</h3> 
+                  <p>Det får du: </p>
+                <ul>
+                  <li>Logo</li>
+                  <li>Hjemmside</li>
+                  <li>Tøj</li>
+                  <li>Teaser</li>
+                </ul>
+              </header> 
+                
+                <section class="deopdown.number">
+                    <label id="antal">Antal:</label>
+                    <select name="Antal" id="Antal">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                </section>
+              </section>
+                   
 
-      <div class="all">
-        <section class="shoppingcart">
-          <header>
-            <h2>Indkøbskurv</h2>
-          </header>
+       <div class="col-50">
+        <h3>Betaling</h3>
+        <p>Vi accepterer KUN disse kort</p>
+        <div class="icon-container">
+          <img class="visa" src="./assets/images/Icon payment-visa.svg" alt="Visa">
+          <img class="Visaelektron" src="./assets/images/Icon payment-visa-electron.svg" alt="Visa elektron">
+          <img class="Mastercard" src="./assets/images/Icon metro-mastercard.svg" alt="Mastercard">
+          <img class="Maestro" src="./assets/images/Icon payment-maestro.svg" alt="Maestro">
+          <img class="JCB" src="./assets/images/Icon payment-jcb.svg" alt="JCB">
+        </div>
+      
 
-          <h3>Basis-pakken</h3>
-
-          <p>Det får du: </p>
-          <ul>
-              <li>Logo</li>
-              <li>Hjemmside</li>
-              <li>Tøj</li>
-              <li>Teaser</li>
-          </ul>
-
-          <section class="deopdown.number">
-            <form >
-              <label id="antal">Antal:</label>
-              <select name="Antal" id="Antal">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-              </select>
+       <div class="col-25">
+         <div class="container-checkout">
+             <h4>Kurv <span class="price"><i class="fa fa-shopping-cart"></i> <b>1</b></span></h4>
+             <p> Basis-pakken <span class="price">15.000 kr.</span></p>
+             <p> Moms <span class="price">5.000 kr.</span></p>
+             <hr>
+             <p>Pris i alt (inkl. moms) <span class="price"><b>20.000 kr. </b></span></p>
+         </div>
+       </div>
+     </div>
+       <nav class="pay">
+         <a href="./kassen.html" class="btn btn-form">Til kassen</a>
+       </nav>
             </form>
-          </section>
-        </section>
-
-        <section class="cardpayment">
-          <header>
-            <h3>Vi accepterer</h3>
-            <section class="cards">
-              <img class="visa" src="./assets/images/Visa.png" alt="Visa">
-              <img class="Visaelektron" src="./assets/images/Visa.2.png" alt="Visa elektron">
-              <img class="Mastercard" src="./assets/images/master.png" alt="Mastercard">
-              <img class="Maestro" src="./assets/images/Metro.png" alt="Maestro">
-              <img class="JCB" src="./assets/images/JCN.png" alt="JCB">
-            </section>
-          </header>
-        </section>
-
-        <div class="col-25">
-          <div class="container">
-              <h4>Kurv <span class="price"><i class="fa fa-shopping-cart"></i> <b>1</b></span></h4>
-              <p> Basis-pakken <span class="price">15.000 kr.</span></p>
-              <p> Moms <span class="price">5.000 kr.</span></p>
-              <hr>
-              <p>Pris i alt (inkl. moms) <span class="price"><b>20.000 kr. </b></span></p>
-          </div>
-        </div>
       </div>
-        <nav class="pay">
-          <a href="kassen.html" class="payhere">Til kassen</a>
-        </nav>
+        </div>
+        </div>
+
+
    
+ <!-- Den nederste bar / footer => START -->
+ <footer class="main-footer">
 
-      <!-- Den nederste bar / footer => START -->
-    <footer class="main-footer">
+  <!--
+    Den øverste grå-sorte bar.
+    - Indeholder informationer om copyright
+  -->
 
-      <!--
-        Den øverste grå-sorte bar.
-        - Indeholder informationer om copyright
-      -->
+  <div class="footer-top">
+    <p>Copyright © 2021</p>
+  </div>
 
-      <div class="footer-top">
-        <p>Copyright © 2021</p>
-      </div>
+  <!--
+    Den nederste sorte bar.
+    - Indeholder logo, virksomheds-info, kontakt-info,
+    og social media info
+  -->
 
-      <!--
-        Den nederste sorte bar.
-        - Indeholder logo, virksomheds-info, kontakt-info,
-        og social media info
-      -->
+  <div class="footer-bottom">
+    <div>
+      <img src="./assets/images/logo.svg" alt="logo">
+      <p class ="footer">
+          Virksomheden blev oprettet i 2021 af 6 individer der
+          bemærkede stigningen af selvstændige virksomheder. <br><br><br>
+        DSP (DEN SELVSTÆNDIGE PAKKE)
+      </p>
+    </div>
 
-      <div class="footer-bottom">
-        <div>
-          <img src="./assets/images/logo.svg" alt="logo">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. <br><br><br>
-            DSP (DEN SELVSTÆNDIGE PAKKE)
-          </p>
-        </div>
+    <div>
+      <h4>Kontakt</h4>
+      <address>
+        <ul>
+          <li>
+            <img src="./assets/images/marker.svg" alt="Marker">
+            <span>Lyngvej 21, 4600 Køge</span>
+          </li>
+          <li>
+            <img src="./assets/images/letter.svg" alt="Letter">
+            <a href="mailto:dsp@dsp.dk">dsp@dsp.dk</a>
+          </li>
+          <li>
+            <img src="./assets/images/github.svg" alt="Github">
+            <a href="https://github.com/hpemcl/DSP---den-selvstaendige-pakke">DSP - Den Selvstaendige Pakke</a>
+          </li>
+          <li>
+            <img src="./assets/images/phone.svg" alt="Phone">
+            <a href="tel:+4521546478">+45 21 54 64 78</a>
+          </li>
+        </ul>
+      </address>
+    </div>
 
-        <div>
-          <h4>Kontakt</h4>
-          <address>
-            <ul>
-              <li>
-                <img src="./assets/images/marker.svg" alt="Marker">
-                <span>Lyngvej 21, 4600 Køge</span>
-              </li>
-              <li>
-                <img src="./assets/images/letter.svg" alt="Letter">
-                <a href="mailto:dsp@dsp.dk">dsp@dsp.dk</a>
-              </li>
-              <li>
-                <img src="./assets/images/github.svg" alt="Github">
-                <a href="#">github.com/dsp</a>
-              </li>
-              <li>
-                <img src="./assets/images/phone.svg" alt="Phone">
-                <a href="tel:+4521546478">+45 21 54 64 78</a>
-              </li>
-            </ul>
-          </address>
-        </div>
-
-        <div>
-          <h4>Følg os</h4>
-          <nav>
-            <a href="#"><img src="./assets/images/facebook.svg" alt="Facebook"></a>
-            <a href="#"><img src="./assets/images/twitter.svg" alt="Twitter"></a>
-            <a href="#"><img src="./assets/images/google-plus.svg" alt="Google Plus"></a>
-            <a href="#"><img src="./assets/images/instagram.svg" alt="Instagram"></a>
-            <a href="#"><img src="./assets/images/pinterest.svg" alt="Pinterest"></a>
-            <a href="#"><img src="./assets/images/linkedin.svg" alt="LinkedIn"></a>
-          </nav>
-        </div>
-      </div>
-    </footer>
-    <!-- Den nederste bar / footer => SLUT -->
-
-
+    <div>
+      <h4>Følg os</h4>
+      <nav>
+        <a href="https://www.facebook.com/Den-Selvst%C3%A6ndige-Pakke-103041695541239/?ref=pages_you_manage"><img src="./assets/images/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="./assets/images/youtube.svg" alt="YouTube"></a>
+        <a href="https://www.tiktok.com/@den_selvstaendige_pakke?_d=secCgwIARCbDRjEFSACKAESPgo8KJixsMrFrNvCRc3UN3enurDCoh9HYNgXuc33HVy7vqyEw3QcE3bbVMtZVLU2NjLQMj%2F4voAMsXWP08pUGgA%3D&checksum=4940d1525add24042f7d6f75149bf63208fac05b54bb1366e2aa5f88d9960848&language=en&sec_uid=MS4wLjABAAAAe6idYOMrmSzMoCDx5DtTrlGHHIecU_8_xXWlNt-ackp0wMFbVm6pfCtyKYRVMtJ0&sec_user_id=MS4wLjABAAAAe6idYOMrmSzMoCDx5DtTrlGHHIecU_8_xXWlNt-ackp0wMFbVm6pfCtyKYRVMtJ0&share_app_id=1233&share_author_id=7023515646794138630&share_link_id=F3D5725E-8FD7-48DF-94A3-97DEB1B3D342&tt_from=copy&u_code=dlb8d14ekh01d2&user_id=7023515646794138630&utm_campaign=client_share&utm_medium=ios&utm_source=copy&source=h5_m&_r=1"><img src="./assets/images/Tiktok.svg" alt="Tiktok"></a>
+        <a href="#"><img src="./assets/images/instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="./assets/images/linkedin.svg" alt="LinkedIn"></a>
+      </nav>
+    </div>
+  </div>
+</footer>
+<!-- Den nederste bar / footer => SLUT -->
 
 
   </body>

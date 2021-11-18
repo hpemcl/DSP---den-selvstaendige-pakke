@@ -54,6 +54,7 @@
                   <a href="./prices.html">Priser</a>
                   <a href="./contact.html">Kontakt os</a>
                   <a href="./about.html">Om os</a>
+                  <a href= "./faq.html">FAQ</a>
                 </div>
               </div>
             </nav>
@@ -70,7 +71,7 @@
       <li><i class="fas fa-chevron-right"></i></li>
       <li><a href="./basic-product.html">Basis pakken</a></li>
       <li><i class="fas fa-chevron-right"></i></li>
-      <li><a href="./Basispakken.html">Basis pakken</a></li>
+      <li><a href="./Basispakken.html">Bestil nu</a></li>
       <li><i class="fas fa-chevron-right"></i></li>
       <li><b>Betaling</b></li>
     </ul>
@@ -79,140 +80,156 @@
 
   
 
-
-
-
-  <section class="payxx">
-    <section class="betaling">
-        <section class="infomation">
-            <header><h2>Kontakt infomation</h2></header>
-            <div>
-                <label for="cname">Fuldenavn</label>
-                    <input type="text" placeholder="John More Doe">
-                <label for="cname">Adresse</label>
-                    <input type="text" placeholder="Amalienborg 5, 1th"> 
-                <label for="cname">Postnummer</label>
-                    <input type="text" placeholder="2100">
-                <label for="cname">Land</label>
-                    <input type="text" placeholder="Danmark">
-                <label for="cname">Email</label>
-                    <input type="email" placeholder="john.doe@gmail.com">
-                <label for="cname">telefonnummer</label>
-                <input type="tel" placeholder="54438965">
-            </div>
-        </section>
-
-        <section class="paymentcard">
-            <header><h2>Betalingsmetode</h2></header>
-            <label for="cname">Kortholderens navn</label>
-                <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-            <label for="ccnum">Kortnummer</label>
-                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-            <label for="expmonth">Udløbsdato</label>
-                <input type="text" id="expmonth" name="expmonth" placeholder="September">
-            <div class="row">
+  <header class="h2-tekst">
+    <h2>Den selvstændig pakke (DSP)</h2>
+    <p>Husk at tjekke om dine oplysninger er stadig rigtigt og udfyldt.</p>
+  </header>
+  
+  <div class="row">
+    <div class="col-75">
+      <div class="container-checkout">
+        <form action="/action_page.php">
+        
+          <div class="row">
             <div class="col-50">
-                <label for="expyear">Udløbsår</label>
-                <input type="text" id="expyear" name="expyear" placeholder="2021">
-            </div>
-            <div class="col-50">
-                <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" placeholder="352">
-                  </div>
-            </div>
-        </section>
-     </section>
+              <h3>Betalingsadresse</h3>
+              <label for="fname"><i class="fa fa-user"></i> Fulde Navn</label>
+              <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+              <label for="email"><i class="fa fa-envelope"></i> Email</label>
+              <input type="text" id="email" name="email" placeholder="john@example.com">
+              <label for="adr"><i class="fa fa-address-card-o"></i> Adresse</label>
+              <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+              <label for="city"><i class="fa fa-institution"></i> By</label>
+              <input type="text" id="city" name="city" placeholder="New York">
 
-    <div class="col-25">
-        <div class="container">
-          <h4>Kurv <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>1</b></span></h4>
-          <p>Basis-pakken <span class="price">15.000 kr.</span></p>
-          <p> Moms <span class="price">5.000 kr.</span></p>
-          <hr>
-          <p>Pris i alt (inkl. moms) <span class="price" style="color:black"><b>20.000 kr. </b></span></p>
-        </div>
+              <div class="row">
+                <div class="col-50">
+                  <label for="zip">Postnummer</label>
+                  <input type="text" id="zip" name="zip" placeholder="1001">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-50">
+              <h3>Betaling</h3>
+              <label for="fname">Vi accepterer KUN disse kort</label>
+              <div class="icon-container">
+                <img class="visa" src="./assets/images/Icon payment-visa.svg" alt="Visa">
+                <img class="Visaelektron" src="./assets/images/Icon payment-visa-electron.svg" alt="Visa elektron">
+                <img class="Mastercard" src="./assets/images/Icon metro-mastercard.svg" alt="Mastercard">
+                <img class="Maestro" src="./assets/images/Icon payment-maestro.svg" alt="Maestro">
+                <img class="JCB" src="./assets/images/Icon payment-jcb.svg" alt="JCB">
+              </div>
+              <label for="cname">Kortet navneholder</label>
+              <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+              <label for="ccnum">Kreditkortet nummer</label>
+              <input type="text" id="ccnum" name="cardnumber" placeholder="11-22-33-44">
+              <label for="expmonth">Exp Måned</label>
+              <input type="text" id="expmonth" name="expmonth" placeholder="12">
+              <div class="row">
+                <div class="col-50">
+                  <label for="expyear">Exp År</label>
+                  <input type="text" id="expyear" name="expyear" placeholder="18">
+                </div>
+                <div class="col-50">
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" name="cvv" placeholder="352">
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+          <label class ="container"> Send leveringsadresse samme som fakturering
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class ="container"> Jeg accepterer handelsbetingelserne*
+          <input type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+      </label>
+
+          <a href="./thanks.html" class="btn btn-form">Bestil nu</a>
+        </form>
+      </div>
     </div>
-</section>
 
-<label class="handelsbetingelser">
-    <input type="checkbox" checked="checked" class="handelsbetingelser"> Jeg accepterer handelsbetingelserne* 
-</label>
+      <div class="col-25">
+          <div class="container-checkout">
+            <h4>Kurv <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>1</b></span></h4>
+            <p>Basis-pakken <span class="price">15.000 kr.</span></p>
+            <p> Moms <span class="price">5.000 kr.</span></p>
+            <hr>
+            <p>Pris i alt (inkl. moms) <span class="price" style="color:black"><b>20.000 kr. </b></span></p>
+          </div>
+      </div>
+  </section>
 
-   <nav class="accepter">
-        <a href="thanks.html" class="accepter">Accepter</a>
+<!-- Den nederste bar / footer => START -->
+ <footer class="main-footer">
+
+  <!--
+    Den øverste grå-sorte bar.
+    - Indeholder informationer om copyright
+  -->
+
+  <div class="footer-top">
+    <p>Copyright © 2021</p>
+  </div>
+
+  <!--
+    Den nederste sorte bar.
+    - Indeholder logo, virksomheds-info, kontakt-info,
+    og social media info
+  -->
+
+  <div class="footer-bottom">
+    <div>
+      <img src="./assets/images/logo.svg" alt="logo">
+      <p class ="footer">
+          Virksomheden blev oprettet i 2021 af 6 individer der
+          bemærkede stigningen af selvstændige virksomheder. <br><br><br>
+        DSP (DEN SELVSTÆNDIGE PAKKE)
+      </p>
+    </div>
+
+    <div>
+      <h4>Kontakt</h4>
+      <address>
+        <ul>
+          <li>
+            <img src="./assets/images/marker.svg" alt="Marker">
+            <span>Lyngvej 21, 4600 Køge</span>
+          </li>
+          <li>
+            <img src="./assets/images/letter.svg" alt="Letter">
+            <a href="mailto:dsp@dsp.dk">dsp@dsp.dk</a>
+          </li>
+          <li>
+            <img src="./assets/images/github.svg" alt="Github">
+            <a href="https://github.com/hpemcl/DSP---den-selvstaendige-pakke">DSP - Den Selvstaendige Pakke</a>
+          </li>
+          <li>
+            <img src="./assets/images/phone.svg" alt="Phone">
+            <a href="tel:+4521546478">+45 21 54 64 78</a>
+          </li>
+        </ul>
+      </address>
+    </div>
+
+    <div>
+      <h4>Følg os</h4>
+      <nav>
+        <a href="https://www.facebook.com/Den-Selvst%C3%A6ndige-Pakke-103041695541239/?ref=pages_you_manage"><img src="./assets/images/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="./assets/images/youtube.svg" alt="YouTube"></a>
+        <a href="https://www.tiktok.com/@den_selvstaendige_pakke?_d=secCgwIARCbDRjEFSACKAESPgo8KJixsMrFrNvCRc3UN3enurDCoh9HYNgXuc33HVy7vqyEw3QcE3bbVMtZVLU2NjLQMj%2F4voAMsXWP08pUGgA%3D&checksum=4940d1525add24042f7d6f75149bf63208fac05b54bb1366e2aa5f88d9960848&language=en&sec_uid=MS4wLjABAAAAe6idYOMrmSzMoCDx5DtTrlGHHIecU_8_xXWlNt-ackp0wMFbVm6pfCtyKYRVMtJ0&sec_user_id=MS4wLjABAAAAe6idYOMrmSzMoCDx5DtTrlGHHIecU_8_xXWlNt-ackp0wMFbVm6pfCtyKYRVMtJ0&share_app_id=1233&share_author_id=7023515646794138630&share_link_id=F3D5725E-8FD7-48DF-94A3-97DEB1B3D342&tt_from=copy&u_code=dlb8d14ekh01d2&user_id=7023515646794138630&utm_campaign=client_share&utm_medium=ios&utm_source=copy&source=h5_m&_r=1"><img src="./assets/images/Tiktok.svg" alt="Tiktok"></a>
+        <a href="#"><img src="./assets/images/instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="./assets/images/linkedin.svg" alt="LinkedIn"></a>
       </nav>
-
-
-      <!-- Den nederste bar / footer => START -->
-      <footer class="main-footer">
-
-        <!--
-          Den øverste grå-sorte bar.
-          - Indeholder informationer om copyright
-        -->
-  
-        <div class="footer-top">
-          <p>Copyright © 2021</p>
-        </div>
-  
-        <!--
-          Den nederste sorte bar.
-          - Indeholder logo, virksomheds-info, kontakt-info,
-          og social media info
-        -->
-  
-        <div class="footer-bottom">
-          <div>
-            <img src="./assets/images/logo.svg" alt="logo">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt
-              ut labore et dolore magna aliqua. <br><br><br>
-              DSP (DEN SELVSTÆNDIGE PAKKE)
-            </p>
-          </div>
-  
-          <div>
-            <h4>Kontakt</h4>
-            <address>
-              <ul>
-                <li>
-                  <img src="./assets/images/marker.svg" alt="Marker">
-                  <span>Lyngvej 21, 4600 Køge</span>
-                </li>
-                <li>
-                  <img src="./assets/images/letter.svg" alt="Letter">
-                  <a href="mailto:dsp@dsp.dk">dsp@dsp.dk</a>
-                </li>
-                <li>
-                  <img src="./assets/images/github.svg" alt="Github">
-                  <a href="#">github.com/dsp</a>
-                </li>
-                <li>
-                  <img src="./assets/images/phone.svg" alt="Phone">
-                  <a href="tel:+4521546478">+45 21 54 64 78</a>
-                </li>
-              </ul>
-            </address>
-          </div>
-  
-          <div>
-            <h4>Følg os</h4>
-            <nav>
-              <a href="#"><img src="./assets/images/facebook.svg" alt="Facebook"></a>
-              <a href="#"><img src="./assets/images/twitter.svg" alt="Twitter"></a>
-              <a href="#"><img src="./assets/images/google-plus.svg" alt="Google Plus"></a>
-              <a href="#"><img src="./assets/images/instagram.svg" alt="Instagram"></a>
-              <a href="#"><img src="./assets/images/pinterest.svg" alt="Pinterest"></a>
-              <a href="#"><img src="./assets/images/linkedin.svg" alt="LinkedIn"></a>
-            </nav>
-          </div>
-        </div>
-      </footer>
-      <!-- Den nederste bar / footer => SLUT -->
-  
-  
-  
-  
+    </div>
+  </div>
+</footer>
+<!-- Den nederste bar / footer => SLUT -->
     </body>
   </html>
